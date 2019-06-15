@@ -10,59 +10,50 @@
 </p>
 
 <p align="center">
-    <a href="#introduction">Introduction</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#subpackages">Subpackages</a> •
-    <a href="#examples">Examples</a> •
-    <a href="#to-do">TO DO</a> •
+    <a href="#page_facing_up-introduction">Introduction</a> •
+    <a href="#wrench-installation">Installation</a> •
+    <a href="#file_folder-subpackages">Subpackages</a> •
+    <a href="#orange_book-examples">Examples</a> •
     <a href="#octocat-upcoming-releases">Upcoming Releases</a> •
+    <a href="#soon-to-do">TO DO</a> •
     <a href="#speech_balloon-faq">FAQ</a> •
 </p>
 
 
 
-<h2 align="center">Introduction</h2>
+<h2 align="center">:page_facing_up: Introduction</h2>
 
 TensorFlow Scientific (TFS) is a Python library built on TensorFlow for scientific computing.
 TensorFlow Scientific contains modules for integration, ODE solvers and other tasks common in science and engineering.
 
 
-<h2 align="center">Installation</h2>
+<h2 align="center">:wrench: Installation</h2>
 
 **WORK IN PROGRESS**
 
 
-<h2 align="center">Subpackages</h2>
+<h2 align="center">:file_folder: Subpackages</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
-[tfs.integrate](tensorflow_scientific/integrate/README.md) | Functionality:
+[tfs.integrate](tensorflow_scientific/integrate/README.md)
 
-[tfs.solvers](tensorflow_scientific/solvers/README.md) | Functionality:
+- Functionality:
 
-[tfs.quantum](tensorflow_scientific/quantum/README.md) | Functionality:
+[tfs.solvers](tensorflow_scientific/solvers/README.md)
+
+- Functionality:
+
+[tfs.quantum](tensorflow_scientific/quantum/README.md)
+
+- Functionality:
 
 
-***
 
-<h2 align="center">Examples</h2>
+<h2 align="center">:orange_book: Examples</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 
 **WORK IN PROGRESS**
-
-
-<h2 align="center">TO DO</h2>
-<p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
-
-- Pypi package badges
-- Official builds badges
-- Issue tracking badges
-- code quality badges
-- code coverage badges
-- Add development environment to contributing.md
-- Add code contributing to contributing.md
-- Add Contributor License Agreement to contributing.md
-- Add some examples
 
 
 
@@ -81,6 +72,22 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 :fire: 0.3.0 Developer Alpha
 
 - tfs.quantum
+
+
+
+<h2 align="center">:soon: TO DO</h2>
+<p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
+
+- Pypi package badges
+- Official builds badges
+- Issue tracking badges
+- code quality badges
+- code coverage badges
+- Add development environment to contributing.md
+- Add code contributing to contributing.md
+- Add Contributor License Agreement to contributing.md
+- Add some examples
+
 
 
 <h2 align="center">:speech_balloon: FAQ</h2>
