@@ -10,29 +10,29 @@
 </p>
 
 <p align="center">
-    <a href="#page_facing_up-introduction">Introduction</a> •
-    <a href="#wrench-installation">Installation</a> •
-    <a href="#file_folder-subpackages">Subpackages</a> •
-    <a href="#orange_book-examples">Examples</a> •
-    <a href="#octocat-upcoming-releases">Upcoming Releases</a> •
-    <a href="#soon-to-do">TO DO</a> •
-    <a href="#speech_balloon-faq">FAQ</a> •
+    <a href="#introduction">Introduction</a> •
+    <a href="#installation">Installation</a> •
+    <a href="#subpackages">Subpackages</a> •
+    <a href="#examples">Examples</a> •
+    <a href="#upcoming-releases">Upcoming Releases</a> •
+    <a href="#to-do">TO DO</a> •
+    <a href="#faq">FAQ</a> •
 </p>
 
 
 
-<h2 align="center">:page_facing_up: Introduction</h2>
+<h2 align="center">Introduction</h2>
 
 TensorFlow Scientific (TFS) is a Python library built on TensorFlow for scientific computing.
 TensorFlow Scientific contains modules for integration, ODE solvers and other tasks common in science and engineering.
 
 
-<h2 align="center">:wrench: Installation</h2>
+<h2 align="center">Installation</h2>
 
 **WORK IN PROGRESS**
 
 
-<h2 align="center">:file_folder: Subpackages</h2>
+<h2 align="center">Subpackages</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 [tfs.integrate](tensorflow_scientific/integrate/README.md)
@@ -49,7 +49,7 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 
 
 
-<h2 align="center">:orange_book: Examples</h2>
+<h2 align="center">Examples</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 
@@ -57,7 +57,7 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 
 
 
-<h2 align="center">:octocat: Upcoming Releases</h2>
+<h2 align="center">Upcoming Releases</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 
@@ -75,7 +75,7 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 
 
 
-<h2 align="center">:soon: TO DO</h2>
+<h2 align="center">TO DO</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 - Pypi package badges
@@ -90,7 +90,7 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 
 
 
-<h2 align="center">:speech_balloon: FAQ</h2>
+<h2 align="center">FAQ</h2>
 <p align="right"><a href="#TensorflowScientific"><sup>▴ Back to top</sup></a></p>
 
 Q1. How do I contribute?
