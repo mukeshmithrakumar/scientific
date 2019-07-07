@@ -1,4 +1,4 @@
-# Copyright 2019 The TensorFlow Authors. All Rights Reserved.
+# Copyright 2019, Mukesh Mithrakumar. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,39 +24,55 @@ from __future__ import print_function
 
 from setuptools import find_packages
 from setuptools import setup
+import os
+import sys
+
+# To enable importing version.py directly, we add its path to sys.path.
+version_path = os.path.join(os.path.dirname(__file__), 'tensorflow_scientific')
+sys.path.append(version_path)
+from version import __version__     # noqa: E402
 
 
 project_name = 'tensorflow-scientific'
-project_version = '1.0.0-beta0'
+project_version = '0.1.0-dev'
 
 REQUIRED_PACKAGES = [
     'six >= 1.10.0',
+    'tensorflow==2.0.0-beta0'
 ]
 
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
 
 setup(
     name=project_name,
-    version=project_version.replace('-', ''),
+    version=__version__,
+    description='Scientific modeling in TensorFlow',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     author='Mukesh Mithrakumar',
-    author_email='mukeshmithrakumar@gmail.com',
-    packages=find_packages(),
+    author_email='mukesh@mukeshmithrakumar.com',
+    url='https://github.com/mukeshmithrakumar/scientific',
+    packages=find_packages(exclude=['tests']),
     install_requires=REQUIRED_PACKAGES,
     include_package_data=True,
     zip_safe=False,
     classifiers=[
-        'Development Status :: 0 - Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Software Development :: Libraries',
     ],
+    project_urls={
+        'Source': 'https://github.com/mukeshmithrakumar/scientific'
+    },
     license='Apache 2.0',
-    keywords='tensorflow scientific',
+    keywords=('tensorflow', 'scientific')
 )

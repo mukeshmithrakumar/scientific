@@ -45,3 +45,8 @@ check.py
 /tensorflow_scientific/solvers
 /tensorflow_scientific/quantum
 .cache
+.pytest_cache
+.*log
+.coverage
+.benchmarks
+.tox

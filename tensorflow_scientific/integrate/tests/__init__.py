@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-"""Integration and ODE solver."""
+"""Integration and ODE solver test."""
 
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
 # flake8: noqa : F403, F401
-from tensorflow_scientific.integrate.odes import *
+from tensorflow_scientific.integrate.tests.odes_test import *

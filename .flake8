@@ -1,0 +1,54 @@
+# http://flake8.pycqa.org/en/latest/user/options.html
+# http://flake8.pycqa.org/en/latest/user/error-codes.html
+# http://pycodestyle.readthedocs.io/en/latest/intro.html#error-codes
+
+[flake8]
+
+# Increase the verbosity of Flake8’s output.
+verbose = 0
+# Decrease the verbosity of Flake8’s output.
+# quiet = 0
+
+# Print the total number of errors.
+count = True
+
+# Print the source code generating the error/warning in question.
+show-source = True
+
+# Count the number of occurrences of each error/warning code and print a report.
+statistics = True
+
+# Redirect all output to the specified file.
+output-file = .flake8.log
+
+# Also print output to stdout if output-file has been configured.
+tee = True
+
+# Provide a comma-separated list of glob patterns to exclude from checks.
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    .tox,
+    dist,
+    doc,
+    build,
+    *.egg
+
+# Provide a comma-separate list of glob patterns to include for checks.
+filename =
+    *.py
+
+# Report all errors, even if it is on the same line as a `# NOQA` comment.
+disable-noqa = False
+
+# Set the maximum length that any line (with some exceptions) may be.
+max-line-length = 120
+
+# Specify a list of codes to ignore.
+ignore =
+    W503,
+    E731
+
+# Enable PyFlakes syntax checking of doctests in docstrings.
+doctests = True

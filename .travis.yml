@@ -1,0 +1,28 @@
+dist: xenial
+language: python
+
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+
+install:
+- python setup.py -q install
+- pip install -r test-requirements.txt
+
+script:
+  - echo "Running Tests ..."
+  - pytest
+  - pytest -v --cov
+  - flake8
+  - coverage run --source=tensorflow_scientific -m pytest
+
+after_success:
+  - coveralls
+
+notifications:
+  email:
+    recipients:
+      - mukesh@mukeshmithrakumar.com
+    on_success: never
+    on_failure: always

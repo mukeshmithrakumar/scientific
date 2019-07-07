@@ -1,0 +1,6 @@
+[run]
+omit =
+    tensorflow_scientific\quantum\*
+    tensorflow_scientific\solvers\*
+    C:\Users\Mukesh\AppData\Roaming\Python\Python36\*
+    *\__init__.py
