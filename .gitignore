@@ -42,7 +42,6 @@ wheels/
 
 # Customs will be removed after every release
 check.py
-/tensorflow_scientific/solvers
 /tensorflow_scientific/quantum
 .cache
 .pytest_cache
