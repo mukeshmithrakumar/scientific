@@ -25,16 +25,14 @@ from __future__ import print_function
 from setuptools import find_packages
 from setuptools import setup
 import os
-import sys
 
-# To enable importing version.py directly, we add its path to sys.path.
-version_path = os.path.join(os.path.dirname(__file__), 'tensorflow_scientific')
-sys.path.append(version_path)
-from version import __version__     # noqa: E402
+version = {}
+base_dir = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(base_dir, "tensorflow_scientific", "version.py")) as fp:
+    exec(fp.read(), version)
 
 
 project_name = 'tensorflow-scientific'
-project_version = '0.1.0-dev'
 
 REQUIRED_PACKAGES = [
     'six >= 1.10.0',
@@ -46,14 +44,14 @@ with open('README.md', 'r') as fh:
 
 setup(
     name=project_name,
-    version=__version__,
+    version=version['__version__'],
     description='Scientific modeling in TensorFlow',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Mukesh Mithrakumar',
     author_email='mukesh@mukeshmithrakumar.com',
     url='https://github.com/mukeshmithrakumar/scientific',
-    packages=find_packages(exclude=['tests']),
+    packages=find_packages(),
     install_requires=REQUIRED_PACKAGES,
     include_package_data=True,
     zip_safe=False,

@@ -50,3 +50,4 @@ check.py
 .coverage
 .benchmarks
 .tox
+.pypirc

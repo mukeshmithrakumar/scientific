@@ -554,12 +554,12 @@ def odeint_fixed(func, y0, t, dt=None, method='rk4', name=None):
         dt = intervals
     dt = ops.convert_to_tensor(dt, preferred_dtype=dtypes.float64, name='dt')
 
-    _check_input_types(y0, t, dt)
-    _check_input_sizes(t, dt)
-
     steps_on_intervals = math_ops.ceil(intervals / dt)
     dt = intervals / steps_on_intervals
     steps_on_intervals = math_ops.cast(steps_on_intervals, dtype=dtypes.int32)
+
+    _check_input_types(y0, t, dt)
+    _check_input_sizes(t, dt)
 
     with _assert_increasing(t):
         if method == 'midpoint':

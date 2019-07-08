@@ -227,12 +227,9 @@ class TestOdeIntFixed(test.TestCase):
         self._test_integrate_sine_all(method)
         self._test_integrate_gaussian_all(method)
 
-    # TODO: Skipping the next two functions because of the following error
-    @pytest.mark.skip(reason="np assert_allclose with ufunc isfinite not supported for the input types")
     def test_midpoint(self):
         self._test_everything('midpoint')
 
-    @pytest.mark.skip(reason="np assert_allclose with ufunc isfinite not supported for the input types")
     def test_rk4(self):
         self._test_everything('rk4')
 
@@ -243,19 +240,15 @@ class TestOdeIntFixed(test.TestCase):
         dt_wrong_dim = np.expand_dims(np.linspace(0., 2., 99), axis=0)
         times_wrong_dim = np.expand_dims(np.linspace(0., 2., 100), axis=0)
 
-        with self.assertRaises(ValueError):
-            self._test_integrate_gaussian('midpoint', times_wrong_dim, dt)
+        with self.assertRaises(errors_impl.InvalidArgumentError):
+            self._test_integrate_gaussian('midpoint', times, dt_wrong_length)
 
         with self.assertRaises(ValueError):
             self._test_integrate_gaussian('midpoint', times, dt_wrong_dim)
 
-        with self.assertRaises(ValueError):
-            self._test_integrate_gaussian('midpoint', times, dt_wrong_length)
+        with self.assertRaises(errors_impl.InvalidArgumentError):
+            self._test_integrate_gaussian('midpoint', times_wrong_dim, dt)
 
 
 if __name__ == '__main__':
-    # python -m  tensorflow_scientific.integrate.tests.odes_test
-    # Use pytest benchmark to benchmark the functions to see the speeds
-    # use pytest -v --cov to check the code coverage
-    # pytest -v
     test.main()

@@ -1,0 +1,2 @@
+recursive-exclude tensorflow_scientific/quantum *
+recursive-exclude tensorflow_scientific/solvers *

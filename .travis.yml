@@ -12,13 +12,14 @@ install:
 
 script:
   - echo "Running Tests ..."
-  - pytest
   - pytest -v --cov
   - flake8
-  - coverage run --source=tensorflow_scientific -m pytest
+  - coverage run --source=tensorflow_scientific setup.py test
 
 after_success:
   - coveralls
+  # - python setup.py sdist bdist_wheel
+  # - twine upload dist/*
 
 notifications:
   email:
