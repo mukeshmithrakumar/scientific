@@ -1,44 +1,19 @@
-#### C++
-C++ code should conform to [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html).
-
-Addons uses [clang-format](https://clang.llvm.org/docs/ClangFormat.html)
-to check your C/C++ changes. Sometimes you have some manually formatted
-code that you don’t want clang-format to touch.
-You can disable formatting like this:
-
-```cpp
-int formatted_code;
-// clang-format off
-    void    unformatted_code  ;
-// clang-format on
-void formatted_code_again;
-```
-
 #### Python
 Python code should conform to [PEP8](https://www.python.org/dev/peps/pep-0008/).
 
-Addons uses [yapf](https://github.com/google/yapf) to format code,
-and [pylint](https://www.pylint.org/) for code analysis.
+TF Scientific uses [flake8](http://flake8.pycqa.org/en/latest/) to format code.
+
 You can disable them locally like this:
 
 ```python
-# yapf: disable
-FOO = {
-    # ... some very large, complex data literal.
-}
+# To ignore all errors for an entire file use:
+# flake8: noqa
+from foo import unused
+function_that_doesnt_exist()
 
-BAR = [
-    # ... another large data literal.
-]
-# yapf: enable
+# To ignore a particular error for a particular line:
+example = lambda: 'example'  # noqa: E731
 ```
-
-```python
-# pylint: disable=protected-access
-foo._protected_member
-# pylint: enable=protected-access
-```
-
 
 #### TensorFlow Conventions
 

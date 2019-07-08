@@ -51,3 +51,4 @@ check.py
 .benchmarks
 .tox
 .pypirc
+releases

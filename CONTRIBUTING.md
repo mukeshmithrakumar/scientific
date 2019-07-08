@@ -18,7 +18,7 @@ minor, then feel free to make them without discussion.
 
 Want to contribute but not sure of what? Here are a few suggestions:
 1. Add a new example or tutorial. Located in [`examples/`](examples),
-  these are a great way to familiarize yourself and others with TF-Addons. See
+  these are a great way to familiarize yourself and others with TF-Scientific. See
   [the guidelines](examples/README.md) for more information on how to add
   examples.
 2. Solve an [existing issue](https://github.com/mukeshmithrakumar/scientific/issues).
@@ -37,10 +37,9 @@ fitting the following criteria:
 * The functionality conforms to the code and documentation standards
 * Lastly, the functionality conforms to the contribution guidelines of its subpackage.
 
-
 ## Development Environment
 
-**WILL BE UPDATED**
+It is recommended that development is done in the latest docker image.
 
 ## Coding style
 
@@ -51,14 +50,9 @@ Please see our [Style Guide](STYLE_GUIDE.md) for more details.
 
 ## Code Testing
 
-**WILL BE UPDATED**
-
+Currently only manual local testing is supported via pytest. In the upcoming release a make file will be built to help run tests in a docker image.
 
 ## Code Reviews
 
 All submissions, including submissions by project members, require review. We
 use Github pull requests for this purpose.
-
-## Contributor License Agreement
-
-**WILL BE UPDATED**
