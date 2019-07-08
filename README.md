@@ -32,6 +32,8 @@ TensorFlow Scientific contains modules for integration, ODE solvers and other ta
 
 #### Stable Builds
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c6cdcda452f84454bfb5f94a3406f24b)](https://app.codacy.com/app/mukesh_4/scientific?utm_source=github.com&utm_medium=referral&utm_content=mukeshmithrakumar/scientific&utm_campaign=Badge_Grade_Dashboard)
+
 To install the latest version, run the following:
 
 ```
