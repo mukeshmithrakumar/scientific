@@ -36,7 +36,7 @@ project_name = 'tensorflow-scientific'
 
 REQUIRED_PACKAGES = [
     'six >= 1.10.0',
-    'tensorflow==2.0.0-beta0'
+    'tensorflow==2.9.3'
 ]
 
 with open('README.md', 'r') as fh:
